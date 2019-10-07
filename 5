@@ -1,0 +1,13 @@
+#include "pch.h"
+#include <iostream>
+using namespace std;
+int main()
+{
+	setlocale(LC_ALL, "ru");
+	int x, a, b;
+	cout << "Введите трехзначное число: ";
+	cin >> x;//102
+	a = x % 100;
+	b = a * 10 + (x - a) / 100;//20+2
+    cout << b << endl;
+}
