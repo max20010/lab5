@@ -1,0 +1,17 @@
+#include "pch.h"
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	setlocale(LC_ALL, "ru");
+	int x,c;
+	cout << "Введите размер файла в байтах: ";
+	cin >> x;
+	c = x%1024;
+	x /= 1024;
+	if (c!= 0) {
+		x++;
+	}
+	cout << x << " Кб" << endl;
+}
