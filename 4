@@ -1,0 +1,14 @@
+#include "pch.h"
+#include <iostream>
+using namespace std;
+int main()
+{
+	setlocale(LC_ALL, "ru");
+	int x,a,b;
+	cout << "Введите двузначное число: ";
+	cin >> x;
+	a = x % 10;
+	b = (x - a) / 10;
+	x = a * 10 + b;
+	cout << x << endl;
+}
